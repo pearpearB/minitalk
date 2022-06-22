@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: jabae <jabae@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/07/16 14:31:30 by daekim            #+#    #+#              #
-#    Updated: 2022/06/18 16:56:15 by jabae            ###   ########.fr        #
+#    Created: 2022/06/23 01:14:31 by jabae             #+#    #+#              #
+#    Updated: 2022/06/23 01:14:40 by jabae            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,18 +21,18 @@ LIBFT =			libft/libft.a
 SRCS_S =		server.c 
 SRCS_C =		client.c
 
-SRCS_S_BONUS =	./bonus/server_bonus.c 
-SRCS_C_BONUS =	./bonus/client_bonus.c
+SRCS_S_BONUS =	server_bonus.c 
+SRCS_C_BONUS =	client_bonus.c
 
 OBJS_S =		server.o 
 OBJS_C =		client.o
 
-OBJS_S_BONUS =	./bonus/server_bonus.o 
-OBJS_C_BONUS =	./bonus/client_bonus.o
+OBJS_S_BONUS =	server_bonus.o 
+OBJS_C_BONUS =	client_bonus.o
 
 CC =			gcc
 
-CFLAGS =		-Wall -Wextra -Werror # -fsanitize=address -g3
+CFLAGS =		-Wall -Wextra -Werror
 
 
 
