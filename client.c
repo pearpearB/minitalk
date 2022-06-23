@@ -6,7 +6,7 @@
 /*   By: jabae <jabae@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 17:24:47 by jabae             #+#    #+#             */
-/*   Updated: 2022/06/23 01:15:01 by jabae            ###   ########.fr       */
+/*   Updated: 2022/06/23 12:47:13 by jabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int	main(int argc, char **argv)
 	if (argc != 3)
 		error_exit("[Error] Parameters format is [server PID] [msg] !");
 	pid = ft_atoi(argv[1]);
-	if (pid < 100 || pid > 99999)
+	if (pid < 100 || pid > 99998)
 		error_exit("[Error] Invalid PID");
 	input_str = (unsigned char *)ft_strdup(argv[2]);
 	slice_str(pid, input_str);
