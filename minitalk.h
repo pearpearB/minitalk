@@ -6,7 +6,7 @@
 /*   By: jabae <jabae@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 15:28:49 by jabae             #+#    #+#             */
-/*   Updated: 2022/06/18 13:57:45 by jabae            ###   ########.fr       */
+/*   Updated: 2022/06/23 16:01:25 by jabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 # define MINITALK_H
 
 # include "./libft/libft.h"
-#include <signal.h>
+# include <signal.h>
 
 #endif

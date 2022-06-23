@@ -6,7 +6,7 @@
 /*   By: jabae <jabae@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 17:24:47 by jabae             #+#    #+#             */
-/*   Updated: 2022/06/23 12:47:13 by jabae            ###   ########.fr       */
+/*   Updated: 2022/06/23 15:34:56 by jabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static void	send_binary(int pid, int c)
 	idx = 0;
 	while (idx < 8)
 	{
-		if (c & base)
+		if (c & base) // 비트 연산자
 			kill(pid, SIGUSR1);
 		else
 			kill(pid, SIGUSR2);

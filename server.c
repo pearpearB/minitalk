@@ -6,7 +6,7 @@
 /*   By: jabae <jabae@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 17:25:00 by jabae             #+#    #+#             */
-/*   Updated: 2022/06/23 01:14:43 by jabae            ###   ########.fr       */
+/*   Updated: 2022/06/23 15:51:29 by jabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ static char	ft_itoa_binary(char *set)
 	int	chr;
 
 	i = 0;
+	chr = 0;
 	while (set[i])
 	{
 		if (set[i] == '1')
@@ -39,7 +40,7 @@ static void	print_char(char *arr, int *idx)
 	{
 		write(1, "\n", 1);
 		i = 0;
-		while (arr[i])
+		while (i < 8)
 		{
 			arr[i] = 0;
 			i++;
@@ -52,7 +53,7 @@ static void	print_char(char *arr, int *idx)
 static void	change_binary(int signo)
 {
 	static char	arr[8];
-	static int	idx = 0;
+	static int	idx;
 
 	if (signo == 30)
 		arr[idx] = '1';

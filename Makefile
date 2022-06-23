@@ -6,7 +6,7 @@
 #    By: jabae <jabae@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/23 01:14:31 by jabae             #+#    #+#              #
-#    Updated: 2022/06/23 12:47:16 by jabae            ###   ########.fr        #
+#    Updated: 2022/06/23 16:12:24 by jabae            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,6 @@ OBJS_C_BONUS =	client_bonus.o
 CC =			gcc
 
 CFLAGS =		-Wall -Wextra -Werror
-
 
 
 all :			$(SERVER) $(CLIENT)
@@ -71,6 +70,6 @@ fclean :	clean
 			rm -f $(SERVER) $(CLIENT)
 			rm -f $(SERVER_BONUS) $(CLIENT_BONUS)
 
-re : 		fclean all bonus
+re : 		fclean all
 
 .PHONY :	all clean fclean re bonus
